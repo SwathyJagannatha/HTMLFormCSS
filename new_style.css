@@ -1,0 +1,171 @@
+header{
+    background-color: orange;
+}
+
+footer{
+    background-color: teal;
+    text-shadow: 10cap;
+    border-radius: 5cap;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    font-style: italic;
+    background-color:rgb(118, 213, 177);
+    text-align: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h2{
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 10pc;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: 200;
+    font-size: medium;
+    text-decoration: wavy;
+    padding-right: 5ch;
+    text-align: justify;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+   text-decoration:underline;
+   color: rgb(0, 2, 139);
+}
+ul,ol{
+    background-origin: padding-box;
+    border: 5px;
+    background-color: #78c7cf6a;
+    text-decoration: solid;
+}
+li{
+    letter-spacing: 1px;
+}
+li:hover
+{
+    text-transform: uppercase;
+    text-decoration-color: burlywood;
+    text-shadow:1px 1px red;
+}
+
+.latest_effect{
+      margin: 10px;
+      background-color: #d26b91;
+      font-display:initial;
+      color:blue
+    }
+
+#step_info{
+    margin: 10px;
+    background-color: rgb(118, 209, 118);
+    border-color: #d26b91;
+    text-shadow: 10cap;
+}
+
+/* id selector*/
+#special-effect{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chocolate;
+    box-sizing: border-box;
+    box-shadow: 2cqb;
+}
+
+/* class selector*/
+
+.special-text {
+    color: darkcyan;
+    font-weight: bold;
+  }
+
+.new_effect
+{
+    background-repeat: repeat-x;
+    flex: auto;
+}
+a:hover{
+    text-decoration: dotted;
+    background-color: aqua;
+    font-size: large;
+}
+
+/* Descendant combinator */
+article p {
+    color: rgb(247, 18, 21);
+  }
+  
+  /* Child combinator */
+  article > p {
+    margin-left: 20px;
+  }
+
+  img {
+    width: 150px;
+    height: auto;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    backdrop-filter:initial;   
+  }
+
+  .container{
+    position:relative;
+    width:50%;
+  }
+
+  .container:hover .middle{
+    opacity:1;
+    color: cadetblue;
+  }
+
+  .container:hover .image{
+    opacity:0.3;
+    color: rgb(166, 117, 2);
+  }
+
+  .text:hover{
+    color: blueviolet;
+    backdrop-filter:inherit;
+    transition-property: all;
+    text-rendering: geometricPrecision;
+    text-shadow: 6cap;
+    font-size: medium;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 40%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  button[type="submit"],
+  button[type="reset"]{
+    background-color: #083463;
+    color: rgb(225, 209, 209);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center;
+    align-self: start;
+    font-weight: 500;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="reset"]:hover {
+    background-color: #b232c3;
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Recipe Submission</title>
+    <link rel="stylesheet" href="submit_recipes.css">
+</head>
+<body>
+    <h1>Welcome to Recipe Page for submissions!!</h1>
+
+    <h2>Cooking Recipes</h2>
+
+    <!-- Creating a SUBMIT form to POST data collected from user -->
+    <form action="/submit" method="post">
+        <!-- Recipe name -->
+        <label for="recipename">Recipe Name:</label>
+        <input type="text" id="recipename" name="recipename" placeholder="Enter new recipe name" required>
+        <br>
+
+        <!-- Ingredients -->
+        <label>List of ingredients required:</label>
+        <br>
+        <input type="checkbox" id="milk" name="ingredients" value="Milk">
+        <label for="milk">Milk</label>
+        <br>
+        <input type="checkbox" id="bread" name="ingredients" value="Bread">
+        <label for="bread">Bread</label>
+        <br>
+        <input type="checkbox" id="spices" name="ingredients" value="Spices">
+        <label for="spices">Spices</label>
+        <br>
+
+        <!-- Instructions -->
+        <label for="instructions">Cooking Procedure</label>
+        <textarea id="instructions" name="instructions" rows="4" cols="50" placeholder="Enter your Instructions:"></textarea>
+        <br>
+
+        <!-- Comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        <br>
+
+        <!-- Reset -->
+        <button type="reset">Reset</button>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
